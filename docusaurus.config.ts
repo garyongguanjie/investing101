@@ -112,10 +112,6 @@ const config: Config = {
         {
           title: 'investing',
           items: [
-            {
-              label: 'Investing',
-              to: '/docs/intro',
-            },
           ],
         }
       ],
