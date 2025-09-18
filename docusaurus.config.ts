@@ -24,8 +24,9 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'garyongguanjie', // Usually your GitHub org/user name.
+  projectName: 'investing101', // Usually your repo name.
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -97,6 +98,11 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Investing',
+        },
+        {
+          to: '/interactive-formulas',
+          label: 'Interactive Formulas',
+          position: 'left',
         },
       ],
     },
