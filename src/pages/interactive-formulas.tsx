@@ -341,6 +341,113 @@ export default function InteractiveFormulas(): React.ReactElement {
         if (result >= 0) return "Minimal - Little protection against valuation errors";
         return "Negative - Stock is overvalued relative to intrinsic value";
       }
+    },
+    {
+      title: "Discounted Cash Flow (DCF) Model",
+      description: "The gold standard for valuation used by professional investors and Buffett himself. Projects future free cash flows and discounts them to present value using the company's cost of capital (WACC).",
+      formula: "\\text{DCF Value} = \\sum_{t=1}^{n} \\frac{FCF_t}{(1+r)^t} + \\frac{TV_n}{(1+r)^n} \\text{ where } TV = \\frac{FCF_{n+1}}{r-g}",
+      inputs: [
+        { label: "Current Free Cash Flow", key: "currentFCF", placeholder: "1000000000", suffix: "$" },
+        { label: "Growth Rate (Years 1-5)", key: "growthRate", placeholder: "8", suffix: "%" },
+        { label: "Terminal Growth Rate", key: "terminalGrowth", placeholder: "3", suffix: "%" },
+        { label: "Discount Rate (WACC)", key: "discountRate", placeholder: "10", suffix: "%" },
+        { label: "Number of Shares", key: "sharesOutstanding", placeholder: "100000000", suffix: "" }
+      ],
+      calculate: (inputs) => {
+        const fcf = inputs.currentFCF;
+        const g = inputs.growthRate / 100;
+        const tg = inputs.terminalGrowth / 100;
+        const r = inputs.discountRate / 100;
+        const shares = inputs.sharesOutstanding;
+        
+        if (r <= tg) return "Invalid: Discount rate must be greater than terminal growth rate";
+        if (r <= 0 || g < 0) return "Invalid: Rates must be positive, growth can be zero";
+        
+        let presentValue = 0;
+        let projectedFCF = fcf;
+        
+        // Calculate present value of projected cash flows (5 years)
+        for (let year = 1; year <= 5; year++) {
+          projectedFCF = projectedFCF * (1 + g);
+          presentValue += projectedFCF / Math.pow(1 + r, year);
+        }
+        
+        // Calculate terminal value
+        const terminalFCF = projectedFCF * (1 + tg);
+        const terminalValue = terminalFCF / (r - tg);
+        const presentTerminalValue = terminalValue / Math.pow(1 + r, 5);
+        
+        // Total enterprise value
+        const totalValue = presentValue + presentTerminalValue;
+        
+        // Value per share
+        return totalValue / shares;
+      },
+      resultLabel: "Intrinsic Value per Share",
+      resultSuffix: "$",
+      interpretation: (result) => {
+        if (typeof result === 'number') {
+          return "This is the calculated intrinsic value per share. Compare to current stock price - buy if trading significantly below this value. DCF is highly sensitive to growth and discount rate assumptions.";
+        }
+        return "";
+      }
+    },
+    {
+      title: "Compound Annual Growth Rate (CAGR)",
+      description: "Calculates the mean annual growth rate of an investment over a specified time period. CAGR smooths out volatility to show the rate at which an investment would have grown if it had grown steadily every year.",
+      formula: "CAGR = \\left(\\frac{\\text{Ending Value}}{\\text{Beginning Value}}\\right)^{\\frac{1}{\\text{Number of Years}}} - 1",
+      inputs: [
+        { label: "Beginning Value", key: "beginningValue", placeholder: "10000", suffix: "$" },
+        { label: "Ending Value", key: "endingValue", placeholder: "25000", suffix: "$" },
+        { label: "Number of Years", key: "years", placeholder: "5", suffix: "" }
+      ],
+      calculate: (inputs) => {
+        if (inputs.beginningValue <= 0 || inputs.endingValue <= 0 || inputs.years <= 0) {
+          return "Invalid: All values must be positive";
+        }
+        return (Math.pow(inputs.endingValue / inputs.beginningValue, 1 / inputs.years) - 1) * 100;
+      },
+      resultLabel: "CAGR",
+      resultSuffix: "%",
+      interpretation: (result) => {
+        if (typeof result === 'number') {
+          if (result >= 15) return "Excellent - Outstanding long-term growth rate";
+          if (result >= 10) return "Good - Strong long-term performance, beats most indices";
+          if (result >= 7) return "Average - Matches typical stock market returns";
+          if (result >= 3) return "Moderate - Beats inflation but limited real growth";
+          if (result >= 0) return "Poor - Minimal growth over the period";
+          return "Negative - Investment lost value over the period";
+        }
+        return "";
+      }
+    },
+    {
+      title: "Future Value Calculator (Using CAGR)",
+      description: "Projects how much your investment will be worth in the future based on a compound annual growth rate. This helps you understand the power of compound growth over time.",
+      formula: "\\text{Future Value} = \\text{Present Value} \\times (1 + CAGR)^{\\text{Number of Years}}",
+      inputs: [
+        { label: "Present Value", key: "presentValue", placeholder: "10000", suffix: "$" },
+        { label: "Expected CAGR", key: "cagr", placeholder: "10", suffix: "%" },
+        { label: "Number of Years", key: "years", placeholder: "10", suffix: "" }
+      ],
+      calculate: (inputs) => {
+        if (inputs.presentValue <= 0 || inputs.years <= 0) {
+          return "Invalid: Present value and years must be positive";
+        }
+        if (inputs.cagr <= -100) {
+          return "Invalid: CAGR cannot be -100% or lower";
+        }
+        const growthMultiplier = 1 + (inputs.cagr / 100);
+        return inputs.presentValue * Math.pow(growthMultiplier, inputs.years);
+      },
+      resultLabel: "Future Value",
+      resultSuffix: "$",
+      interpretation: (result) => {
+        if (typeof result === 'number') {
+          return `Your investment could grow significantly over time. Remember that higher growth rates are harder to sustain long-term, and actual results may vary due to market volatility.`;
+        }
+        return "";
+      }
     }
   ];
 
