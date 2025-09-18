@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Start with the basics',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/investing_chart.svg').default,
     description: (
       <>
         Learn core concepts like risk vs return, diversification, compounding, and asset classes—explained in plain English.
@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Build long-term habits',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/investing_piggybank.svg').default,
     description: (
       <>
         Focus on what you can control: save consistently, invest regularly, stay diversified, and keep costs low.
@@ -30,7 +30,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Simple strategies explained',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/investing_portfolio.svg').default,
     description: (
       <>
         Step-by-step walkthroughs of index funds, dollar-cost averaging, rebalancing, and setting realistic goals.

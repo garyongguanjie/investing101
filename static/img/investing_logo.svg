@@ -1,0 +1,47 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with subtle gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="chartGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#28a745;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#20c997;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="20" cy="20" r="19" fill="url(#bgGradient)" stroke="#dee2e6" stroke-width="1"/>
+  
+  <!-- Chart axes -->
+  <line x1="8" y1="30" x2="32" y2="30" stroke="#6c757d" stroke-width="1.5"/>
+  <line x1="8" y1="30" x2="8" y2="10" stroke="#6c757d" stroke-width="1.5"/>
+  
+  <!-- Upward trending line with gradient -->
+  <polyline points="8,28 12,26 16,22 20,18 24,14 28,10 32,8" 
+            fill="none" stroke="url(#chartGradient)" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Key data points -->
+  <circle cx="8" cy="28" r="1.5" fill="#28a745"/>
+  <circle cx="16" cy="22" r="1.5" fill="#28a745"/>
+  <circle cx="24" cy="14" r="1.5" fill="#28a745"/>
+  <circle cx="32" cy="8" r="1.5" fill="#28a745"/>
+  
+  <!-- Dollar sign indicator -->
+  <text x="33" y="7" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#28a745">$</text>
+  
+  <!-- Subtle grid lines -->
+  <line x1="8" y1="24" x2="32" y2="24" stroke="#e9ecef" stroke-width="0.5" opacity="0.7"/>
+  <line x1="8" y1="18" x2="32" y2="18" stroke="#e9ecef" stroke-width="0.5" opacity="0.7"/>
+  <line x1="8" y1="12" x2="32" y2="12" stroke="#e9ecef" stroke-width="0.5" opacity="0.7"/>
+  
+  <line x1="14" y1="30" x2="14" y2="10" stroke="#e9ecef" stroke-width="0.5" opacity="0.7"/>
+  <line x1="20" y1="30" x2="20" y2="10" stroke="#e9ecef" stroke-width="0.5" opacity="0.7"/>
+  <line x1="26" y1="30" x2="26" y2="10" stroke="#e9ecef" stroke-width="0.5" opacity="0.7"/>
+  
+  <!-- Growth arrow -->
+  <path d="M 30 12 L 34 8 L 32 10 L 36 6" 
+        fill="none" stroke="#28a745" stroke-width="1.5" stroke-linecap="round"/>
+  <polygon points="34,4 36,6 38,4 36,8" fill="#28a745"/>
+</svg>

@@ -89,7 +89,7 @@ const config: Config = {
       title: 'Investing 101',
       logo: {
         alt: 'Investing 101 Logo',
-        src: 'img/logo.svg',
+        src: 'img/investing_logo.svg',
       },
       items: [
         {

@@ -1,0 +1,48 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2"/>
+  
+  <!-- Piggy bank body -->
+  <ellipse cx="100" cy="110" rx="50" ry="35" fill="#ff6b9d" stroke="#e91e63" stroke-width="2"/>
+  
+  <!-- Piggy bank head -->
+  <circle cx="70" cy="95" r="25" fill="#ff6b9d" stroke="#e91e63" stroke-width="2"/>
+  
+  <!-- Snout -->
+  <ellipse cx="50" cy="95" rx="8" ry="6" fill="#ff6b9d" stroke="#e91e63" stroke-width="2"/>
+  
+  <!-- Nostrils -->
+  <circle cx="47" cy="93" r="1.5" fill="#e91e63"/>
+  <circle cx="47" cy="97" r="1.5" fill="#e91e63"/>
+  
+  <!-- Eye -->
+  <circle cx="65" cy="88" r="3" fill="#ffffff"/>
+  <circle cx="66" cy="87" r="2" fill="#333333"/>
+  
+  <!-- Ear -->
+  <path d="M 75 75 Q 80 70 85 75 Q 80 80 75 75" fill="#ff6b9d" stroke="#e91e63" stroke-width="1"/>
+  
+  <!-- Legs -->
+  <rect x="75" y="140" width="8" height="15" fill="#ff6b9d" stroke="#e91e63" stroke-width="1"/>
+  <rect x="95" y="140" width="8" height="15" fill="#ff6b9d" stroke="#e91e63" stroke-width="1"/>
+  <rect x="115" y="140" width="8" height="15" fill="#ff6b9d" stroke="#e91e63" stroke-width="1"/>
+  <rect x="135" y="140" width="8" height="15" fill="#ff6b9d" stroke="#e91e63" stroke-width="1"/>
+  
+  <!-- Coin slot -->
+  <rect x="95" y="85" width="15" height="3" rx="1.5" fill="#333333"/>
+  
+  <!-- Coins falling in -->
+  <circle cx="105" cy="70" r="4" fill="#ffd700" stroke="#ffb300" stroke-width="1"/>
+  <text x="102" y="74" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="#ffb300">$</text>
+  
+  <circle cx="115" cy="55" r="4" fill="#ffd700" stroke="#ffb300" stroke-width="1"/>
+  <text x="112" y="59" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="#ffb300">$</text>
+  
+  <!-- Tail -->
+  <path d="M 145 105 Q 155 100 160 110 Q 155 115 150 110" fill="none" stroke="#e91e63" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Growth arrow -->
+  <path d="M 160 130 L 175 115 L 170 120 L 180 110 L 175 115 L 190 100" 
+        fill="none" stroke="#28a745" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="185,95 190,100 195,95 190,105" fill="#28a745"/>
+</svg>
