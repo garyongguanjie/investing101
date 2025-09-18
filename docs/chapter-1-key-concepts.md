@@ -2,6 +2,7 @@
 id: chapter-1-key-concepts
 title: Chapter 1 - Key Investment Concepts
 sidebar_label: Chapter 1 - Key Concepts
+sidebar_position: 1
 slug: /chapter-1-key-concepts
 description: Essential investment concepts every beginner should understand - risk vs return, liquidity, diversification, and inflation.
 keywords:

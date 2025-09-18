@@ -2,6 +2,7 @@
 id: chapter-11-portfolio-management
 title: Chapter 11 - Portfolio Management
 sidebar_label: Chapter 11 - Portfolio Management
+sidebar_position: 11
 slug: /chapter-11-portfolio-management
 description: Learn the art and science of portfolio management - when to buy, how much to buy, and when to sell. Discover why index funds are often the best starting point and how to manage individual stock positions effectively.
 keywords:

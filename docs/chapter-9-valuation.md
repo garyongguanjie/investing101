@@ -2,6 +2,7 @@
 id: chapter-9-valuation
 title: Chapter 9 - Valuation
 sidebar_label: Chapter 9 - Valuation
+sidebar_position: 9
 slug: /chapter-9-valuation
 description: Learn how to calculate intrinsic value using financial statements, understand key valuation ratios like P/E, P/B, and P/S, and master various valuation formulas for stock analysis.
 keywords:

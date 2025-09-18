@@ -2,6 +2,7 @@
 id: chapter-4-bonds
 title: Chapter 4 - Bonds
 sidebar_label: Chapter 4 - Bonds
+sidebar_position: 4
 slug: /chapter-4-bonds
 description: A comprehensive guide to understanding bonds - what they are, how they work, coupon rates, yields, credit ratings, and the relationship between bond prices and yields.
 keywords:

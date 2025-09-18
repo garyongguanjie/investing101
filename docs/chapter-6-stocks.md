@@ -2,6 +2,7 @@
 id: chapter-6-stocks
 title: Chapter 6 - Stocks
 sidebar_label: Chapter 6 - Stocks
+sidebar_position: 6
 slug: /chapter-6-stocks
 description: A comprehensive guide to stocks - understanding businesses, dividends, key risks, and the challenges of stock picking without covering valuation methods.
 keywords:

@@ -2,6 +2,7 @@
 id: chapter-12-mindset-psychology
 title: Chapter 12 - Mindset and Psychology
 sidebar_label: Chapter 12 - Mindset and Psychology
+sidebar_position: 12
 slug: /chapter-12-mindset-psychology
 description: Master the psychological aspects of investing. Learn why legendary investors emphasize heart over brain, how to form independent opinions, and why interpreting numbers correctly matters more than following formulas.
 keywords:

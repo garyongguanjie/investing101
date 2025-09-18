@@ -2,6 +2,7 @@
 id: chapter-5-reits
 title: Chapter 5 - Real Estate Investment Trusts (REITs)
 sidebar_label: Chapter 5 - REITs
+sidebar_position: 5
 slug: /chapter-5-reits
 description: A comprehensive guide to Real Estate Investment Trusts (REITs) - how they own properties, generate rental income, use leverage, key risks, and growth limitations.
 keywords:

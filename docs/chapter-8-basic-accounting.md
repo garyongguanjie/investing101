@@ -2,6 +2,7 @@
 id: chapter-8-basic-accounting
 title: Chapter 8 - Basic Accounting
 sidebar_label: Chapter 8 - Basic Accounting
+sidebar_position: 8
 slug: /chapter-8-basic-accounting
 description: Essential accounting fundamentals for security analysis - understanding financial statements, assets, liabilities, and key accounting ratios for stock and REIT analysis.
 keywords:

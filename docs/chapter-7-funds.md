@@ -2,6 +2,7 @@
 id: chapter-7-funds
 title: Chapter 7 - Funds
 sidebar_label: Chapter 7 - Funds
+sidebar_position: 7
 slug: /chapter-7-funds
 description: A comprehensive guide to investment funds - understanding fund basics, types of funds, ETFs vs mutual funds, and index funds like the S&P 500.
 keywords:

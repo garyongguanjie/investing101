@@ -2,7 +2,7 @@
 id: investing-101
 title: Investing 101 – The Basics Made Simple
 sidebar_label: Investing 101
-sidebar_position: 1
+sidebar_position: 0
 slug: /investing-101
 description: A beginner-friendly introduction to investing—why it matters, how it differs from saving, and how compounding grows your money over time.
 keywords:

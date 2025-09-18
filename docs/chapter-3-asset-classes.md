@@ -2,6 +2,7 @@
 id: chapter-3-asset-classes
 title: Chapter 3 - Types of Investment Assets
 sidebar_label: Chapter 3 - Asset Classes
+sidebar_position: 3
 slug: /chapter-3-asset-classes
 description: Understanding the three main asset classes - stocks, bonds, and real estate - and how each generates returns for investors.
 keywords:

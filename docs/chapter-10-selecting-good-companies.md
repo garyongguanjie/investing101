@@ -2,6 +2,7 @@
 id: chapter-10-selecting-good-companies
 title: Chapter 10 - Selecting Good Companies
 sidebar_label: Chapter 10 - Selecting Good Companies
+sidebar_position: 10
 slug: /chapter-10-selecting-good-companies
 description: Learn how to identify high-quality companies with sustainable competitive advantages, strong financial metrics, and excellent management that can compound wealth over the long term.
 keywords:

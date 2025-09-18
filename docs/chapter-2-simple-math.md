@@ -1,3 +1,15 @@
+---
+id: chapter-2-simple-math
+title: Chapter 2 - Simple Math of Investing
+sidebar_label: Chapter 3 - Simple Math of Investing
+sidebar_position: 2
+slug: /chapter-3-asset-classes
+description: Understanding some simple math for investing
+keywords:
+  - Compounding
+  - Rule of 72
+---
+
 # Chapter 2: Simple Math of Investing
 
 ## Compounding
