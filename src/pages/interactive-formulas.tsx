@@ -48,6 +48,41 @@ const FormulaCalculator: React.FC<FormulaCalculatorProps> = ({
   const [inputValues, setInputValues] = useState<Record<string, string>>({});
   const [result, setResult] = useState<number | string | null>(null);
 
+  // Determine color class based on interpretation and title
+  const getInterpretationColorClass = (interpretationText: string, title: string): string => {
+    if (typeof interpretationText !== 'string') return 'interpretationNeutral';
+    
+    const text = interpretationText.toLowerCase();
+    
+    // Specific neutral cases
+    if (text.includes('compare this') || text.includes('intrinsic value') || text.includes('invalid:')) {
+      return 'interpretationNeutral';
+    }
+    
+    // Good indicators (green)
+    if (text.includes('excellent') || text.includes('good') || text.includes('undervalued') || 
+        text.includes('bargain') || text.includes('strong') || text.includes('adequate margin') ||
+        text.includes('very large margin') || text.includes('reasonable') || text.includes('fairly valued')) {
+      return 'interpretationGood';
+    }
+    
+    // Danger indicators (red)
+    if (text.includes('poor') || text.includes('avoid') || text.includes('risky') || 
+        text.includes('very expensive') || text.includes('overvalued') || text.includes('inefficient') ||
+        text.includes('liquidity problems') || text.includes('dangerously') || text.includes('negative')) {
+      return 'interpretationDanger';
+    }
+    
+    // Caution indicators (yellow)
+    if (text.includes('average') || text.includes('moderate') || text.includes('expensive') || 
+        text.includes('caution') || text.includes('acceptable') || text.includes('minimal') ||
+        text.includes('higher debt') || text.includes('some protection')) {
+      return 'interpretationCaution';
+    }
+    
+    return 'interpretationNeutral';
+  };
+
   const handleInputChange = (key: string, value: string) => {
     const newInputValues = { ...inputValues, [key]: value };
     setInputValues(newInputValues);
@@ -102,14 +137,20 @@ const FormulaCalculator: React.FC<FormulaCalculatorProps> = ({
       </div>
 
       {result !== null && (
-        <div className={styles.result}>
-          <strong>{resultLabel}: {typeof result === 'number' ? result.toFixed(2) : result}{resultSuffix}</strong>
-          {interpretation && typeof result === 'number' && (
-            <div className={styles.interpretation}>
-              <em>{interpretation(result)}</em>
+        <>
+          {interpretation && typeof result === 'number' ? (
+            <div className={styles[getInterpretationColorClass(interpretation(result), title)]}>
+              <strong>{resultLabel}: {resultSuffix === '$' ? `$${result.toFixed(2)}` : `${result.toFixed(2)}${resultSuffix}`}</strong>
+              <div className={styles.interpretation}>
+                <em>{interpretation(result)}</em>
+              </div>
+            </div>
+          ) : (
+            <div className={styles.result}>
+              <strong>{resultLabel}: {typeof result === 'number' ? (resultSuffix === '$' ? `$${result.toFixed(2)}` : `${result.toFixed(2)}${resultSuffix}`) : `${result}${resultSuffix}`}</strong>
             </div>
           )}
-        </div>
+        </>
       )}
     </div>
   );
