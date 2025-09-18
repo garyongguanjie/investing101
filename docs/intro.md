@@ -99,7 +99,3 @@ Key takeaways:
 - Build an emergency fund (3–6 months of expenses).
 - Choose a simple, diversified investment approach (e.g., low-cost broad-market index funds).
 - Automate contributions and review annually.
-
-Continue learning:
-- See the site intro: [Getting Started](intro)
-- Explore “Tutorial Basics” in the sidebar for more Markdown examples and structure

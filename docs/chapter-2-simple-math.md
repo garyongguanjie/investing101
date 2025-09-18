@@ -1,9 +1,9 @@
 ---
 id: chapter-2-simple-math
 title: Chapter 2 - Simple Math of Investing
-sidebar_label: Chapter 3 - Simple Math of Investing
+sidebar_label: Chapter 2 - Simple Math of Investing
 sidebar_position: 2
-slug: /chapter-3-asset-classes
+slug: /chapter-2-simple-math-of-investing
 description: Understanding some simple math for investing
 keywords:
   - Compounding
