@@ -125,13 +125,13 @@ export default function PromptGenerator(): React.JSX.Element {
 
 ### Cash Flow & Dividend Metrics
 - Free Cash Flow Margin: ${formData.freeCashFlowMargin || 'Not provided'}%
-- Operating Cash Flow: ${formData.operatingCashFlow || 'Not provided'}
+- Operating Cash Flow ($M): ${formData.operatingCashFlow || 'Not provided'}
 - Dividend Yield: ${formData.dividendYield || 'Not provided'}%
 - Dividend Payout Ratio: ${formData.payoutRatio || 'Not provided'}%
 
 ### Asset Quality
 - Book Value per Share: ${formData.bookValuePerShare || 'Not provided'}
-- Tangible Book Value: ${formData.tangibleBookValue || 'Not provided'}
+- Tangible Book Value $(M): ${formData.tangibleBookValue || 'Not provided'}
 
 ## Analysis Framework
 Please analyze this company through the lens of these legendary investors and provide insights on:
