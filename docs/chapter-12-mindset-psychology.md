@@ -279,16 +279,16 @@ Modern businesses often don't fit traditional valuation frameworks designed for 
 
 **Modern Financial Services**: Much more complex revenue streams that don't fit traditional metrics.
 
-**Credit Card Businesses**:
-- **Revenue source**: Transaction fees, interest, merchant fees
-- **Value driver**: Customer relationships and spending patterns
-- **Metric limitation**: Book value doesn't capture customer lifetime value
+**Wealth Management Businesses**:
+- **Revenue source**: Asset management fees, advisory fees, transaction commissions
+- **Value driver**: Client relationships and assets under management
+- **Metric limitation**: Book value doesn't capture client relationships and fee-earning capacity
 
-**Example**: American Express
-- **Traditional view**: Bank stock, value based on book value
-- **Reality**: Premium brand with loyal, high-spending customers
-- **Value drivers**: Brand strength, customer relationships, closed-loop network
-- **Appropriate metrics**: Return on equity, customer acquisition costs, spending per customer
+**Example**: Charles Schwab
+- **Traditional view**: Brokerage firm, value based on book value
+- **Reality**: Wealth management platform with sticky client relationships
+- **Value drivers**: Assets under management, client retention, fee margins
+- **Appropriate metrics**: Assets under management growth, revenue per client, client acquisition costs
 
 **Wealth Management**:
 - **Revenue source**: Asset management fees (typically 1-2% annually)
