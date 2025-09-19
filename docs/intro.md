@@ -99,3 +99,38 @@ Key takeaways:
 - Build an emergency fund (3–6 months of expenses).
 - Choose a simple, diversified investment approach (e.g., low-cost broad-market index funds).
 - Automate contributions and review annually.
+
+---
+
+## Important Disclaimer
+
+### AI-Generated Content Notice
+
+This comprehensive investment guide was created using artificial intelligence through advanced meta prompting techniques. Meta prompting is a sophisticated AI methodology where structured prompts are used to guide AI systems in generating comprehensive, educational content by breaking down complex topics into digestible components and ensuring consistency across multiple related documents.
+
+### Content Accuracy and Verification
+
+**Please be aware that:**
+
+- This guide has **not been fact-checked** by financial professionals or subject matter experts
+- All numerical examples, calculations, and statistical data presented have **not been independently verified**
+- Information may contain inaccuracies, outdated data, or oversimplified explanations of complex financial concepts
+- The content is generated for educational purposes and should not be considered as definitive financial guidance
+
+### Investment Risk Warning
+
+**Investing involves substantial risk, including:**
+
+- **Risk of Loss**: You may lose some or all of your invested capital
+- **Market Volatility**: Investment values can fluctuate significantly and unpredictably
+- **No Guarantees**: Past performance does not guarantee future results
+- **Individual Circumstances**: Your personal financial situation, risk tolerance, and investment goals are unique
+
+**Do not follow this guide blindly.** Before making any investment decisions:
+
+- Conduct your own thorough research and due diligence
+- Consult with qualified financial advisors, accountants, or investment professionals
+- Consider your personal financial situation, risk tolerance, and investment objectives
+- Verify all information through reputable financial sources and institutions
+
+This guide is intended solely for educational purposes and should serve as a starting point for your investment education, not as personalized financial advice.
