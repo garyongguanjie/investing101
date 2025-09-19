@@ -109,6 +109,11 @@ const config: Config = {
           label: 'Interactive Formulas',
           position: 'left',
         },
+        {
+          to: '/prompt-generator',
+          label: '🚀 AI Analysis Generator',
+          position: 'left',
+        },
       ],
     },
     footer: {
