@@ -432,9 +432,10 @@ Many investors sell their best performers too early, limiting their upside poten
 **Better Approach**: Hold quality companies as long as fundamentals remain strong
 
 **Position Management for Winners**:
-- **Trim positions** that grow beyond 8-10% of portfolio
-- **Never sell completely** unless fundamentals deteriorate
-- **Reinvest trimmings** in other opportunities or index funds
+- **Never trim winning positions**: Let exceptional companies compound without interference
+- **Allow concentration in quality**: Great businesses can grow to become larger portfolio positions naturally
+- **Only sell when fundamentals deteriorate**: Hold winners as long as business quality remains intact
+- **Focus on business performance**: Judge positions by company fundamentals, not portfolio weight
 
 #### Learning from Losers
 
