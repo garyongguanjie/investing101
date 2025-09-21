@@ -409,6 +409,21 @@ Modern businesses often don't fit traditional valuation frameworks designed for 
 
 ## Common Interpretation Mistakes
 
+> "It's not what the numbers are, but what the numbers mean that matters in investing."
+> 
+> — **Investment Principle**
+
+The most dangerous mistake investors make is treating financial metrics as absolute truths rather than contextual indicators. A P/E ratio of 25 might represent excellent value for a growing technology company or dangerous overvaluation for a mature utility company. The same debt-to-equity ratio could signal prudent leverage for a real estate company or excessive risk for a software business.
+
+**The Context Problem**: Every number in finance exists within a specific context of:
+- **Industry dynamics** and competitive positioning
+- **Business model** and revenue characteristics  
+- **Economic environment** and interest rate levels
+- **Company life cycle** stage and growth trajectory
+- **Management quality** and capital allocation skills
+
+Understanding what drives the numbers behind the numbers is what separates successful long-term investors from those who mechanically apply formulas. This principle underlies every interpretation mistake discussed below.
+
 ### Blindly Following Historical Rules
 
 #### The "Never Pay More Than 15× Earnings" Fallacy
