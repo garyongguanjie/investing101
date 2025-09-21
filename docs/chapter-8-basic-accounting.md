@@ -219,18 +219,36 @@ $$\text{Annual Depreciation} = \frac{\text{Cost} - \text{Salvage Value}}{\text{U
 #### Components of Shareholders' Equity:
 
 **1. Common Stock**
-- **Par value**: Nominal value assigned to shares
-- **Shares outstanding**: Number of shares owned by investors
-- **Market value**: Current trading price of shares
 
-**2. Retained Earnings**
+Common Stock represents the ownership shares of a company held by investors. It's listed on the balance sheet at its `par value`, which is a nominal value assigned to the shares, often very low, and has little relation to the market price.
+
+- **Par value**: A nominal, often symbolic, value assigned to each share. Historically, it represented legal capital for creditor protection, but today, it's largely an accounting formality. Many modern companies issue "no-par" or very low par value stock (e.g., \$0.01 per share).
+- **Shares outstanding**: The total number of shares currently owned by investors.
+- **Market value**: The current trading price of the shares on an exchange, which fluctuates based on market demand, company performance, and other factors, and is distinct from the par value.
+
+*Simplified Explanation:* Think of `Common Stock` (in terms of its par value on the balance sheet) as a tiny, almost symbolic "label price" printed on each share, like \$0.01. It's an old-fashioned legal requirement and doesn't tell you much about the stock's real economic worth today.
+
+**2. Additional Paid-in Capital (APIC)**
+
+**Definition**: This represents the amount of money investors have paid for a company's shares *over and above* the shares' par value. When a company issues stock, the actual price paid by investors is usually much higher than the nominal par value.
+
+- **Example**: If a share has a par value of \$1 but investors paid \$20 for it, the `Additional Paid-in Capital` for that share would be \$19.
+- **Accounting Treatment**: The \$1 would be recorded under `Common Stock` (at par) and the \$19 would be recorded under `Additional Paid-in Capital`.
+
+*Simplified Explanation:* If investors pay, say, \$10 for a share that has a \$0.01 "label price" (par value), the extra \$9.99 per share goes into `Additional Paid-in Capital`. This account captures the **actual extra money** that investors paid into the company directly when they bought newly issued shares, beyond that tiny symbolic par value.
+
+Together, `Common Stock` (par value portion) and `Additional Paid-in Capital` represent the total capital (`total amount of cash or assets`) the company has received directly from its shareholders when it initially sold them stock.
+
+**Important Note on Capital Generation:** This capital (from Common Stock and Additional Paid-in Capital) is generated only when the company issues new shares directly to investors. This primarily occurs during:
+- **Initial Public Offerings (IPOs)**: The very first time a company offers its shares for sale to the general public.
+- **Rights Issues**: When a company offers existing shareholders the right to buy new shares, usually at a discount.
+
+It's crucial to understand that buying and selling of existing shares on the stock market (secondary market trading) does **not** add new capital to the company. When an investor buys shares from another investor on the stock market, the money changes hands between those two investors, not the company itself.
+
+**3. Retained Earnings**
 - **Definition**: Cumulative profits kept in the business
 - **Calculation**: All-time profits minus all-time dividends paid
 - **Growth**: Increases when company is profitable and retains earnings
-
-**3. Additional Paid-in Capital**
-- **Definition**: Amount investors paid above par value for shares
-- **Example**: If par value is \$1 but investors paid \$20, additional paid-in capital is \$19 per share
 
 #### Retained Earnings Calculation:
 $$\text{Ending Retained Earnings} = \text{Beginning Retained Earnings} + \text{Net Income} - \text{Dividends Paid}$$

@@ -27,6 +27,9 @@ Money that a company owes to its suppliers for goods or services it has received
 ### **Accounts Receivable**
 Money that customers owe to a company for goods or services the company has already delivered. This appears as an asset on the balance sheet because the company expects to collect this money, usually within 30-90 days.
 
+### **Additional Paid-in Capital (APIC)**
+This represents the amount of money investors have paid for a company's shares over and above the shares' par value. When a company issues stock, the actual price paid by investors is usually much higher than the nominal par value. For example, if a share has a par value of \$1 but investors paid \$20 for it, the `Additional Paid-in Capital` for that share would be \$19. Together with Common Stock (at par value), this account represents the total capital a company has received directly from its shareholders when it initially sold them stock.
+
 ### **Adjusted Funds From Operations (AFFO)**
 A more conservative measure of REIT profitability that subtracts necessary capital expenditures from FFO. The formula is:
 $$\text{AFFO} = \text{FFO} - \text{Recurring Capital Expenditures}$$
@@ -89,7 +92,7 @@ A financial statement that tracks how cash moves in and out of a business over a
 The areas of business and investing that you understand well enough to make informed decisions. Warren Buffett emphasizes staying within your circle of competence and only investing in businesses you can thoroughly understand.
 
 ### **Common Stock**
-The most basic form of corporate ownership. Common stockholders have voting rights, receive dividends when declared, and benefit from capital appreciation, but they are last in line to be paid if the company goes bankrupt.
+The most basic form of corporate ownership, representing shares of a company held by investors. It's listed on the balance sheet at its `par value`, which is a nominal and often symbolic value assigned to the shares, bearing little relation to their market price. Common stockholders generally have voting rights, receive dividends (when declared), and a residual claim on the company's assets and earnings after all liabilities and preferred stock obligations are met.
 
 ### **Competitive Advantage**
 Features that allow a company to outperform its competitors consistently. This might include lower costs, better products, stronger brand recognition, or exclusive access to resources or markets.
@@ -231,6 +234,20 @@ $$\text{FFO} = \text{Net Income} + \text{Depreciation} + \text{Amortization} - \
 ### **Future Value**
 The value of a current investment at a specific date in the future based on an assumed growth rate. The formula is:
 $$\text{Future Value} = \text{Present Value} \times (1 + \text{Interest Rate})^{\text{Number of Periods}}$$
+
+---
+
+## G
+
+### **Government Bonds**
+Debt securities issued by federal, state, or local governments. They're generally considered lower risk than corporate bonds because governments are less likely to default.
+
+### **Gross Margin**
+The percentage of revenue remaining after subtracting the cost of goods sold. The formula is:
+$$\text{Gross Margin} = \frac{\text{Gross Profit}}{\text{Revenue}} \times 100\%$$
+
+### **Gross Profit**
+Revenue minus the cost of goods sold. It represents the profit before accounting for operating expenses like salaries, rent, and marketing.
 
 ---
 
@@ -475,7 +492,7 @@ $$\text{ROIC} = \frac{\text{Net Operating Profit After Tax}}{\text{Invested Capi
 The total amount of money a company receives from its business operations before any expenses are subtracted. Also called sales or the "top line."
 
 ### **Rights Issues**
-When a REIT or company offers existing shareholders the right to buy additional shares at a discount to the current market price, typically to raise capital for growth or debt reduction.
+When a company offers existing shareholders the right to buy new, additional shares at a discount to the current market price, typically to raise capital for growth or debt reduction. This is a primary market transaction where the company directly receives funds from investors.
 
 ### **Risk**
 The possibility that an investment will lose value or not perform as expected. Different types include business risk, market risk, and liquidity risk.
