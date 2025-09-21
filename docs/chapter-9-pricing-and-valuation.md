@@ -1,12 +1,13 @@
 ---
 id: chapter-9-valuation
-title: Chapter 9 - Valuation
-sidebar_label: Chapter 9 - Valuation
+title: Chapter 9 - Pricing and Valuation
+sidebar_label: Chapter 9 - Pricing and Valuation
 sidebar_position: 9
 slug: /chapter-9-valuation
 description: Learn how to calculate intrinsic value using financial statements, understand key valuation ratios like P/E, P/B, and P/S, and master various valuation formulas for stock analysis.
 keywords:
   - valuation
+  - pricing
   - intrinsic value
   - price to earnings
   - price to book
@@ -14,14 +15,21 @@ keywords:
   - DCF model
   - dividend discount model
   - Benjamin Graham
+  - Warren Buffett
   - value investing
   - financial analysis
   - stock valuation
 ---
 
-# Chapter 9: Valuation
+# Chapter 9: Pricing and Valuation
 
-Valuation is the process of determining the intrinsic value of a company based on its financial statements, business fundamentals, and future prospects. Understanding valuation helps investors identify whether a stock is overpriced, fairly valued, or undervalued in the market. This chapter builds on the accounting knowledge from Chapter 8 to teach you how to calculate what a company is actually worth.
+> "Price is what you pay; value is what you get."
+> 
+> — **Warren Buffett**
+
+Valuation is the process of determining the intrinsic value of a company based on its financial statements, business fundamentals, and future prospects. Understanding the critical distinction between **price** and **value** - as Warren Buffett wisely noted - is fundamental to successful investing. Price is simply what the market is willing to pay at any given moment, while value represents what the business is actually worth based on its ability to generate cash flows over time.
+
+Understanding valuation helps investors identify whether a stock is overpriced, fairly valued, or undervalued in the market. This chapter builds on the accounting knowledge from Chapter 8 to teach you how to calculate what a company is actually worth.
 
 ---
 
