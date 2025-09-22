@@ -169,7 +169,16 @@ Please analyze this company through the lens of these legendary investors and pr
 - **Industry Dynamics**: Is this an attractive industry with rational competitive behavior?
 - **Management Rationality**: Based on available information, how would Munger assess management quality?
 
-### 6. Red Flags and Risk Assessment
+### 6. Terry Smith's Quality Growth Assessment
+- **Quality Business Criteria**: Does this company meet Terry Smith's criteria for high-quality businesses (high ROIC, strong cash generation, predictable earnings)?
+- **Simple and Understandable**: Is the business model straightforward and easy to understand without complex financial engineering?
+- **Sustainable Competitive Advantages**: What specific moats protect this business, and how durable are they over time?
+- **Management Track Record**: Has management demonstrated consistent execution and prudent capital allocation over multiple years?
+- **Cash Flow Quality**: How strong and consistent are the company's free cash flows, and are they growing over time?
+- **Pricing Power**: Does the company have the ability to raise prices without losing significant market share?
+- **Capital Efficiency**: How efficiently does the company deploy capital, and does it require minimal reinvestment to maintain growth?
+
+### 7. Red Flags and Risk Assessment
 Please identify any potential red flags based on the provided metrics:
 - Financial leverage concerns
 - Declining profitability trends
@@ -177,7 +186,7 @@ Please identify any potential red flags based on the provided metrics:
 - Industry-specific risks
 - Any metrics that are concerning relative to industry benchmarks
 
-### 7. Investment Recommendation
+### 8. Investment Recommendation
 Based on the analysis above, please provide:
 - **Overall Assessment**: Buy, Hold, or Avoid recommendation with reasoning
 - **Fair Value Estimate**: Rough intrinsic value range using multiple methods
@@ -185,7 +194,7 @@ Based on the analysis above, please provide:
 - **Monitoring Metrics**: Key metrics to watch for changes in investment thesis
 - **Position Sizing**: Appropriate portfolio weight given risk/reward profile
 
-### 8. Legendary Investor Quotes Application
+### 9. Legendary Investor Quotes Application
 Please conclude with relevant quotes from these investors that apply to this specific analysis, explaining how their wisdom relates to this investment opportunity.
 
 Please be thorough in your analysis and explain your reasoning for each assessment. If any critical information is missing for a complete analysis, please specify what additional data would be helpful for a more definitive recommendation.`;
@@ -219,7 +228,7 @@ Please be thorough in your analysis and explain your reasoning for each assessme
           <h1>📊 Investment Analysis Prompt Generator</h1>
           <p className={styles.description}>
             Generate comprehensive analysis prompts that apply the investment philosophies of legendary investors 
-            like Warren Buffett, Benjamin Graham, Peter Lynch, Philip Fisher, and Charlie Munger to evaluate any company.
+            like Warren Buffett, Benjamin Graham, Peter Lynch, Philip Fisher, Charlie Munger, and Terry Smith to evaluate any company.
           </p>
         </div>
 
@@ -631,6 +640,7 @@ Please be thorough in your analysis and explain your reasoning for each assessme
             <li><strong>Peter Lynch:</strong> Growth at reasonable price (GARP) and industry position analysis</li>
             <li><strong>Philip Fisher:</strong> Growth analysis through "scuttlebutt" research, R&D effectiveness, and management quality</li>
             <li><strong>Charlie Munger:</strong> Qualitative business analysis and rational decision-making</li>
+            <li><strong>Terry Smith:</strong> Quality growth investing focusing on high ROIC businesses with sustainable competitive advantages</li>
           </ul>
           <p>
             <em>Note: Not all fields are required. Fill in what you have available - the AI can work with partial data and will note what additional information would be helpful.</em>
