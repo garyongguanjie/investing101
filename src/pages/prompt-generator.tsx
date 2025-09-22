@@ -9,10 +9,13 @@ interface CompanyData {
   industry: string;
   currentStockPrice: string;
   aaaBondRate: string;
+  // Additional Context
+  additionalDetails: string;
   // Financial Strength Metrics
   currentRatio: string;
   quickRatio: string;
   debtToEquity: string;
+  totalDebtToEquity: string;
   interestCoverage: string;
   // Profitability Metrics
   roe: string;
@@ -47,9 +50,11 @@ const initialData: CompanyData = {
   industry: '',
   currentStockPrice: '',
   aaaBondRate: '',
+  additionalDetails: '',
   currentRatio: '',
   quickRatio: '',
   debtToEquity: '',
+  totalDebtToEquity: '',
   interestCoverage: '',
   roe: '',
   roa: '',
@@ -87,8 +92,11 @@ export default function PromptGenerator(): React.JSX.Element {
   };
 
   const generatePrompt = () => {
-    const prompt = `I want to analyze ${formData.companyName} (${formData.country}) as a potential long-term investment opportunity. Please provide a comprehensive analysis from the perspectives of legendary investors like Warren Buffett, Benjamin Graham, Peter Lynch, Philip Fisher, and Charlie Munger.
+    const additionalContext = formData.additionalDetails.trim() ? 
+      `\n## Additional Investment Context & User Insights\n${formData.additionalDetails}\n\n**IMPORTANT**: Please incorporate this additional context throughout your analysis. This information should inform your assessment across all investor perspectives and help tailor recommendations to the specific circumstances and concerns outlined above.\n` : '';
 
+    const prompt = `I want to analyze ${formData.companyName} (${formData.country}) as a potential long-term investment opportunity. Please provide a comprehensive analysis from the perspectives of legendary investors like Warren Buffett, Benjamin Graham, Peter Lynch, Philip Fisher, Charlie Munger, and Terry Smith.
+${additionalContext}
 ## Company Information
 - **Company**: ${formData.companyName}
 - **Country**: ${formData.country}
@@ -101,6 +109,7 @@ export default function PromptGenerator(): React.JSX.Element {
 - Current Ratio: ${formData.currentRatio || 'Not provided'}
 - Quick Ratio: ${formData.quickRatio || 'Not provided'}
 - Debt-to-Equity: ${formData.debtToEquity || 'Not provided'}
+- Total Debt-to-Equity: ${formData.totalDebtToEquity || 'Not provided'}
 - Interest Coverage Ratio: ${formData.interestCoverage || 'Not provided'}
 
 ### Profitability & Returns
@@ -186,18 +195,27 @@ Please identify any potential red flags based on the provided metrics:
 - Industry-specific risks
 - Any metrics that are concerning relative to industry benchmarks
 
-### 8. Investment Recommendation
-Based on the analysis above, please provide:
-- **Overall Assessment**: Buy, Hold, or Avoid recommendation with reasoning
-- **Fair Value Estimate**: Rough intrinsic value range using multiple methods
-- **Key Risks**: Major risks that could impair the investment thesis
-- **Monitoring Metrics**: Key metrics to watch for changes in investment thesis
-- **Position Sizing**: Appropriate portfolio weight given risk/reward profile
+### 8. Investment Recommendation & Action Plan
+Based on the comprehensive analysis above, please provide:
+- **Overall Assessment**: Clear Buy, Hold, or Avoid recommendation with specific reasoning
+- **Fair Value Range**: Provide a specific price range with conservative, base case, and optimistic scenarios
+- **Entry Strategy**: Recommended entry points and position sizing approach
+- **Key Catalysts**: Specific events or developments that could drive the investment thesis
+- **Exit Strategy**: Clear criteria for when to sell or reduce the position
+- **Monitoring Framework**: Specific metrics and warning signs to track quarterly
 
-### 9. Legendary Investor Quotes Application
-Please conclude with relevant quotes from these investors that apply to this specific analysis, explaining how their wisdom relates to this investment opportunity.
+### 9. Legendary Investor Wisdom Application
+Please conclude with relevant quotes from these investors that apply to this specific analysis, explaining how their timeless wisdom relates to this particular investment opportunity and decision-making process.
 
-Please be thorough in your analysis and explain your reasoning for each assessment. If any critical information is missing for a complete analysis, please specify what additional data would be helpful for a more definitive recommendation.`;
+## Final Instructions for Analysis Quality
+- **Be Specific**: Provide concrete numbers, ranges, and actionable insights rather than generic statements
+- **Show Your Work**: Explain the reasoning behind each assessment and calculation
+- **Address Gaps**: If critical information is missing, specify exactly what additional data would strengthen the analysis
+- **Provide Context**: Compare metrics to industry benchmarks and historical performance where relevant
+- **Stay Objective**: Present both bull and bear cases fairly, acknowledging uncertainties and risks
+- **Make It Actionable**: Ensure your recommendations are clear enough for implementation in a real portfolio
+
+Please be comprehensive in your analysis while maintaining clarity and practical applicability for investment decision-making.`;
 
     setGeneratedPrompt(prompt);
     setActiveTab('prompt');
@@ -303,6 +321,21 @@ Please be thorough in your analysis and explain your reasoning for each assessme
             </div>
 
             <div className={styles.section}>
+              <h3>💡 Additional Investment Context</h3>
+              <div className={styles.inputGroup}>
+                <label>Additional Details & Investment Thesis</label>
+                <textarea
+                  value={formData.additionalDetails}
+                  onChange={(e) => handleInputChange('additionalDetails', e.target.value)}
+                  placeholder="Provide any additional context that would help with the investment analysis, such as:&#10;• Your personal investment thesis or conviction&#10;• Recent company developments or news&#10;• Competitive positioning insights&#10;• Management quality observations&#10;• Industry trends or tailwinds/headwinds&#10;• Specific concerns or red flags you've noticed&#10;• Recent quarterly earnings highlights&#10;• Strategic initiatives or new product launches&#10;• ESG considerations&#10;• Any other relevant qualitative factors"
+                  rows={15}
+                  style={{ width: '100%', resize: 'vertical' }}
+                />
+                <small>This context will help the AI provide more informed and relevant analysis tailored to your specific investment considerations</small>
+              </div>
+            </div>
+
+            <div className={styles.section}>
               <h3>💪 Financial Strength Metrics</h3>
               <div className={styles.metricsGrid}>
                 <div className={styles.inputGroup}>
@@ -333,7 +366,17 @@ Please be thorough in your analysis and explain your reasoning for each assessme
                     onChange={(e) => handleInputChange('debtToEquity', e.target.value)}
                     placeholder="e.g., 0.3"
                   />
-                  <small>Total Debt ÷ Shareholders' Equity</small>
+                  <small>Long-term Debt ÷ Shareholders' Equity</small>
+                </div>
+                <div className={styles.inputGroup}>
+                  <label>Total Debt-to-Equity</label>
+                  <input
+                    type="text"
+                    value={formData.totalDebtToEquity}
+                    onChange={(e) => handleInputChange('totalDebtToEquity', e.target.value)}
+                    placeholder="e.g., 0.45"
+                  />
+                  <small>Total Debt (Short + Long-term) ÷ Shareholders' Equity</small>
                 </div>
                 <div className={styles.inputGroup}>
                   <label>Interest Coverage</label>
