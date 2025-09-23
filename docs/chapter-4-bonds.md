@@ -227,6 +227,45 @@ One of the most important concepts in bond investing is the **inverse relationsh
 
 ---
 
+## Reinvestment Risk
+
+**Reinvestment risk** occurs when coupon payments must be reinvested at lower interest rates than originally expected, reducing your actual total return below the initial yield to maturity.
+
+### The Problem
+When you buy a bond, your total return depends on both the bond's yield AND the rates at which you can reinvest coupon payments. If interest rates fall, you're forced to reinvest at lower rates.
+
+### Mathematical Example: 10-Year Bond
+**Bond details**: \$1,000 face value, 6% coupon, purchased at par
+
+#### Scenario Analysis:
+| Reinvestment Rate | Total Value at Maturity | Actual Annual Return | vs Expected (6%) |
+|-------------------|-------------------------|---------------------|------------------|
+| 3% (rates fall)   | \$1,686.99             | 5.34%              | -66 basis points |
+| 6% (rates stable) | \$1,790.85             | 6.00%              | 0 basis points   |
+| 9% (rates rise)   | \$1,911.44             | 6.68%              | +68 basis points |
+
+**Key calculation**: 
+$$\text{Total Value} = \text{\$1,000} + \text{\$60} \times \frac{(1+r)^{10} - 1}{r}$$
+
+Where r = reinvestment rate
+
+:::warning Key Insight
+**Falling interest rates hurt long-term bond investors** through reinvestment risk, even though bond prices rise. About 60% of a bond's expected return comes from reinvesting coupons successfully.
+:::
+
+### Factors That Increase Reinvestment Risk
+1. **Longer maturity**: More coupon payments to reinvest
+2. **Higher coupon rates**: Larger payments need reinvestment  
+3. **Declining rate environment**: Forces reinvestment at lower rates
+
+### Managing Reinvestment Risk
+- **Bond laddering**: Stagger maturities to reduce rate dependence
+- **Zero-coupon bonds**: No coupons = no reinvestment risk
+- **Shorter maturities**: Less exposure to changing rates
+- **Bond funds**: Professional reinvestment management
+
+---
+
 ## Bond Investment Strategies
 
 ### Buy and Hold
