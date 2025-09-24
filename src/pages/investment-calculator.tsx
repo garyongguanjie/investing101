@@ -306,7 +306,6 @@ export default function InvestmentCalculator(): React.ReactElement {
                     <th>Year</th>
                     <th>With Investing</th>
                     <th>Without Investing</th>
-                    <th>Difference</th>
                     <th>Total Contributions</th>
                     <th>Investment Gains</th>
                   </tr>
@@ -320,9 +319,6 @@ export default function InvestmentCalculator(): React.ReactElement {
                       </td>
                       <td>
                         ${data.notInvestingValue.toLocaleString(undefined, { maximumFractionDigits: 0 })}
-                      </td>
-                      <td className={styles.difference}>
-                        ${(data.investingValue - data.notInvestingValue).toLocaleString(undefined, { maximumFractionDigits: 0 })}
                       </td>
                       <td>
                         ${data.totalContributions.toLocaleString(undefined, { maximumFractionDigits: 0 })}
