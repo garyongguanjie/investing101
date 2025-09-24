@@ -81,6 +81,25 @@ Let's examine a concrete example using a \$1,000,000 rental property:
 **The Key Insight:**
 The 4% yield property generates **twice** the rental income (\$40,000 vs \$20,000). This \$20,000 additional annual income represents a 100% increase in cash flow.
 
+### Stock Dividend Yield Example: Growth vs. Safe Stocks
+
+Let's look at a more extreme example using stock dividend yields:
+
+**Growth Stock Example:**
+- Annual Dividend Yield: 0.5%
+- Focus: Capital appreciation through growth
+
+**Safe Stock Example:**
+- Annual Dividend Yield: 5%
+- Focus: Steady dividend income
+
+**The Dramatic Difference:**
+The safe stock's 5% yield is **10 times higher** than the growth stock's 0.5% yield - representing approximately **900% more dividend income**. This means for every \$100 invested:
+- Growth stock generates: \$0.50 in annual dividends
+- Safe stock generates: \$5.00 in annual dividends
+
+For the growth stock to justify this enormous yield disadvantage, it would need significant capital appreciation to compensate for the dramatically lower dividend income. This highlights why growth stocks must deliver substantial price increases to match the total returns of high-dividend alternatives.
+
 ### Why This Matters for Investors
 
 Understanding yield differentials is critical because:
@@ -90,6 +109,7 @@ Understanding yield differentials is critical because:
 3. **Investment Selection**: Small yield differences compound into large income differences over time
 
 **Remember**: When evaluating yields, think in terms of **relative percentage increases** rather than absolute differences. Your money needs to work as efficiently as possible.
+
 
 ## Why Compounding Beats Trading
 
