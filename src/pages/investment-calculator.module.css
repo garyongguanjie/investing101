@@ -1,0 +1,514 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: var(--ifm-color-primary);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--ifm-color-emphasis-800);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Input Section */
+.inputSection {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inputSection h2 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.inputGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--ifm-color-content);
+  font-size: 0.95rem;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.prefix {
+  display: flex;
+  align-items: center;
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.suffix {
+  display: flex;
+  align-items: center;
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+  background: var(--ifm-background-color);
+  color: var(--ifm-color-content);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px rgba(var(--ifm-color-primary-rgb), 0.2);
+}
+
+/* Remove number input arrows */
+.input[type="number"]::-webkit-outer-spin-button,
+.input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Summary Section */
+.summarySection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.summaryCard {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summaryCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.summaryCard h3 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.summaryValue {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--ifm-color-success);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.summaryLabel {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Chart Section */
+.chartSection {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chartSection h2 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.chartContainer {
+  background: var(--ifm-background-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.chart {
+  width: 100%;
+}
+
+.chartHeader {
+  margin-bottom: 1rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-content);
+}
+
+.legendColor {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+}
+
+.chartArea {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.yAxis {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  height: 300px;
+  width: 80px;
+  padding-right: 0.5rem;
+}
+
+.yAxisLabel {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+  text-align: right;
+  line-height: 1;
+}
+
+.plotArea {
+  flex: 1;
+  height: 300px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  background: var(--ifm-background-color);
+}
+
+.xAxis {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding-left: 90px;
+}
+
+.xAxisLabel {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+  text-align: center;
+}
+
+/* Table Section */
+.tableSection {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tableSection h2 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.tableContainer {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table th {
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-content);
+  font-weight: 600;
+  padding: 1rem 0.75rem;
+  text-align: left;
+  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-content);
+  white-space: nowrap;
+}
+
+.table tbody tr:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.positive {
+  color: var(--ifm-color-success-dark);
+  font-weight: 600;
+}
+
+.difference {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.gains {
+  color: var(--ifm-color-success);
+  font-weight: 600;
+}
+
+/* Educational Note */
+.educationalNote {
+  background: var(--ifm-color-info-contrast-background);
+  border: 1px solid var(--ifm-color-info);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.educationalNote h3 {
+  color: var(--ifm-color-info-dark);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.educationalNote ul {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.educationalNote li {
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-info-darker);
+  line-height: 1.5;
+}
+
+.educationalNote p {
+  color: var(--ifm-color-info-darker);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .inputSection,
+[data-theme='dark'] .summaryCard,
+[data-theme='dark'] .chartSection,
+[data-theme='dark'] .tableSection {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .chartContainer {
+  background: var(--ifm-background-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .input {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+[data-theme='dark'] .plotArea {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+[data-theme='dark'] .table th {
+  background: var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .tableContainer {
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .content {
+    gap: 2rem;
+  }
+  
+  .inputSection,
+  .chartSection,
+  .tableSection,
+  .educationalNote {
+    padding: 1.5rem;
+  }
+  
+  .summaryCard {
+    padding: 1rem;
+  }
+  
+  .summaryValue {
+    font-size: 1.5rem;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .inputGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .summarySection {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .legend {
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .chartArea {
+    flex-direction: column;
+  }
+  
+  .yAxis {
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+  }
+  
+  .xAxis {
+    padding-left: 0;
+  }
+  
+  .table {
+    font-size: 0.8rem;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .summarySection {
+    grid-template-columns: 1fr;
+  }
+  
+  .legend {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .summaryValue {
+    font-size: 1.3rem;
+  }
+  
+  .plotArea {
+    height: 250px;
+  }
+  
+  .yAxis {
+    height: 250px;
+  }
+}
+
+/* Animation for smooth transitions */
+.summaryCard,
+.input {
+  transition: all 0.2s ease;
+}
+
+.table tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+/* Print styles */
+@media print {
+  .container {
+    max-width: none;
+    padding: 1rem;
+  }
+  
+  .inputSection,
+  .summaryCard,
+  .chartSection,
+  .tableSection {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    break-inside: avoid;
+  }
+  
+  .content {
+    gap: 1rem;
+  }
+  
+  .chart svg {
+    max-height: 200px;
+  }
+}
