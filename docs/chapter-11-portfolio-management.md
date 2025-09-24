@@ -768,7 +768,7 @@ $$\text{After-Tax Dividend} = \text{Gross Dividend} \times (1 - \text{Withholdin
 
 **US Estate Tax for Non-Residents**:
 - **Threshold**: Only \$60,000 exemption (vs. \$12+ million for US residents)
-- **Tax rate**: Up to 40% on assets above exemption
+- **Tax rate**: Up to **40%** on assets above exemption
 - **Applies to**: All US-situated assets including stocks, bonds, and real estate
 
 **Estate Tax Calculation**:
