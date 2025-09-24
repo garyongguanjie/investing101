@@ -217,7 +217,7 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  height: 300px;
+  height: 400px;
   width: 80px;
   padding-right: 0.5rem;
 }
@@ -231,7 +231,7 @@
 
 .plotArea {
   flex: 1;
-  height: 300px;
+  height: 400px;
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 4px;
   background: var(--ifm-background-color);
@@ -470,11 +470,11 @@
   }
   
   .plotArea {
-    height: 250px;
+    height: 350px;
   }
   
   .yAxis {
-    height: 250px;
+    height: 350px;
   }
 }
 

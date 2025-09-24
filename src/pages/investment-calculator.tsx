@@ -91,9 +91,14 @@ export default function InvestmentCalculator(): React.ReactElement {
     }));
   };
 
+  const handleInputWheel = (e: React.WheelEvent<HTMLInputElement>) => {
+    // Prevent scrolling from changing the input value
+    e.currentTarget.blur();
+  };
+
   const maxValue = Math.max(
     ...investmentData.map(d => Math.max(d.investingValue, d.notInvestingValue))
-  );
+  ) * 1.1; // Add 10% padding at the top
 
   return (
     <Layout
@@ -123,6 +128,7 @@ export default function InvestmentCalculator(): React.ReactElement {
                     step="1000"
                     value={inputStrings.initialAmount}
                     onChange={(e) => handleInputChange('initialAmount', e.target.value)}
+                    onWheel={handleInputWheel}
                     className={styles.input}
                   />
                 </div>
@@ -137,6 +143,7 @@ export default function InvestmentCalculator(): React.ReactElement {
                     step="1000"
                     value={inputStrings.annualContribution}
                     onChange={(e) => handleInputChange('annualContribution', e.target.value)}
+                    onWheel={handleInputWheel}
                     className={styles.input}
                   />
                 </div>
@@ -152,6 +159,7 @@ export default function InvestmentCalculator(): React.ReactElement {
                     max="50"
                     value={inputStrings.cagr}
                     onChange={(e) => handleInputChange('cagr', e.target.value)}
+                    onWheel={handleInputWheel}
                     className={styles.input}
                   />
                   <span className={styles.suffix}>%</span>
@@ -168,6 +176,7 @@ export default function InvestmentCalculator(): React.ReactElement {
                     max="50"
                     value={inputStrings.timeHorizon}
                     onChange={(e) => handleInputChange('timeHorizon', e.target.value)}
+                    onWheel={handleInputWheel}
                     className={styles.input}
                   />
                   <span className={styles.suffix}>years</span>
@@ -243,15 +252,15 @@ export default function InvestmentCalculator(): React.ReactElement {
                   </div>
                   
                   <div className={styles.plotArea}>
-                    <svg width="100%" height="300" viewBox="0 0 800 300">
+                    <svg width="100%" height="400" viewBox="0 0 800 400">
                       {/* Grid lines */}
                       {[0, 0.25, 0.5, 0.75, 1].map(fraction => (
                         <line
                           key={fraction}
                           x1="0"
-                          y1={300 - fraction * 300}
+                          y1={400 - fraction * 400}
                           x2="800"
-                          y2={300 - fraction * 300}
+                          y2={400 - fraction * 400}
                           stroke="#e5e7eb"
                           strokeWidth="1"
                         />
@@ -260,7 +269,7 @@ export default function InvestmentCalculator(): React.ReactElement {
                       {/* Investing line */}
                       <path
                         d={investmentData.map((d, i) => 
-                          `${i === 0 ? 'M' : 'L'} ${(i / (investmentData.length - 1)) * 800} ${300 - (d.investingValue / maxValue) * 300}`
+                          `${i === 0 ? 'M' : 'L'} ${(i / (investmentData.length - 1)) * 800} ${400 - (d.investingValue / maxValue) * 400}`
                         ).join(' ')}
                         fill="none"
                         stroke="#22c55e"
@@ -270,7 +279,7 @@ export default function InvestmentCalculator(): React.ReactElement {
                       {/* Not investing line */}
                       <path
                         d={investmentData.map((d, i) => 
-                          `${i === 0 ? 'M' : 'L'} ${(i / (investmentData.length - 1)) * 800} ${300 - (d.notInvestingValue / maxValue) * 300}`
+                          `${i === 0 ? 'M' : 'L'} ${(i / (investmentData.length - 1)) * 800} ${400 - (d.notInvestingValue / maxValue) * 400}`
                         ).join(' ')}
                         fill="none"
                         stroke="#ef4444"
@@ -280,7 +289,7 @@ export default function InvestmentCalculator(): React.ReactElement {
                       {/* Contributions line */}
                       <path
                         d={investmentData.map((d, i) => 
-                          `${i === 0 ? 'M' : 'L'} ${(i / (investmentData.length - 1)) * 800} ${300 - (d.totalContributions / maxValue) * 300}`
+                          `${i === 0 ? 'M' : 'L'} ${(i / (investmentData.length - 1)) * 800} ${400 - (d.totalContributions / maxValue) * 400}`
                         ).join(' ')}
                         fill="none"
                         stroke="#3b82f6"
@@ -293,13 +302,13 @@ export default function InvestmentCalculator(): React.ReactElement {
                         <g key={i}>
                           <circle
                             cx={(i / (investmentData.length - 1)) * 800}
-                            cy={300 - (d.investingValue / maxValue) * 300}
+                            cy={400 - (d.investingValue / maxValue) * 400}
                             r="4"
                             fill="#22c55e"
                           />
                           <circle
                             cx={(i / (investmentData.length - 1)) * 800}
-                            cy={300 - (d.notInvestingValue / maxValue) * 300}
+                            cy={400 - (d.notInvestingValue / maxValue) * 400}
                             r="4"
                             fill="#ef4444"
                           />
