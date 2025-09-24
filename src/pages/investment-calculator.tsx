@@ -263,7 +263,6 @@ export default function InvestmentCalculator(): React.ReactElement {
                       `$${value.toLocaleString(undefined, { maximumFractionDigits: 0 })}`,
                       name === 'investingValue' ? 'With Investing' :
                       name === 'notInvestingValue' ? 'Without Investing' :
-                      name === 'totalContributions' ? 'Total Contributions' :
                       name
                     ]}
                     labelFormatter={(label) => `Year ${label}`}
@@ -273,7 +272,6 @@ export default function InvestmentCalculator(): React.ReactElement {
                     formatter={(value) => 
                       value === 'investingValue' ? 'With Investing' :
                       value === 'notInvestingValue' ? 'Without Investing' :
-                      value === 'totalContributions' ? 'Total Contributions' :
                       value
                     }
                   />
@@ -292,15 +290,6 @@ export default function InvestmentCalculator(): React.ReactElement {
                     strokeWidth={3}
                     dot={{ fill: '#ef4444', strokeWidth: 2, r: 4 }}
                     activeDot={{ r: 6, stroke: '#ef4444', strokeWidth: 2 }}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="totalContributions"
-                    stroke="#3b82f6"
-                    strokeWidth={2}
-                    strokeDasharray="5 5"
-                    dot={{ fill: '#3b82f6', strokeWidth: 2, r: 3 }}
-                    activeDot={{ r: 5, stroke: '#3b82f6', strokeWidth: 2 }}
                   />
                 </LineChart>
               </ResponsiveContainer>
