@@ -47,6 +47,50 @@ Years to Double ≈ 72 ÷ Interest Rate (%)
 
 **Example:** At 8% annual return, your money will double in approximately 72 ÷ 8 = 9 years.
 
+## Understanding Yield Differentials
+
+When comparing investment yields, it's crucial to understand that the difference between yields represents a **relative percentage increase**, not an absolute difference.
+
+### The Math Behind Yield Comparisons
+
+Consider two investments with different yields:
+- Investment A: 2% yield
+- Investment B: 4% yield
+
+Many investors incorrectly think this is just a "2% difference." However, the correct way to calculate the difference is:
+
+$$\text{Relative Difference} = \frac{\text{Higher Yield} - \text{Lower Yield}}{\text{Lower Yield}} \times 100\%$$
+
+$$\text{Relative Difference} = \frac{4\% - 2\%}{2\%} \times 100\% = \frac{2\%}{2\%} \times 100\% = 100\%$$
+
+**Investment B provides 100% more income than Investment A**, not just 2% more.
+
+### Real Estate Example: Property Rental Yields
+
+Let's examine a concrete example using a \$1,000,000 rental property:
+
+**Scenario 1: 2% Annual Yield**
+- Property Value: \$1,000,000
+- Annual Rental Income: $$\$1,000,000 \times 2\% = \$20,000$$
+
+
+**Scenario 2: 4% Annual Yield** 
+- Property Value: \$1,000,000
+- Annual Rental Income: $$\$1,000,000 \times 4\% = \$40,000$$
+
+**The Key Insight:**
+The 4% yield property generates **twice** the rental income (\$40,000 vs \$20,000). This \$20,000 additional annual income represents a 100% increase in cash flow.
+
+### Why This Matters for Investors
+
+Understanding yield differentials is critical because:
+
+1. **Cash Flow Impact**: Higher yields dramatically increase your income stream
+2. **Opportunity Cost**: Choosing lower-yield investments means sacrificing significant income
+3. **Investment Selection**: Small yield differences compound into large income differences over time
+
+**Remember**: When evaluating yields, think in terms of **relative percentage increases** rather than absolute differences. Your money needs to work as efficiently as possible.
+
 ## Why Compounding Beats Trading
 
 ### The Compounding Advantage
