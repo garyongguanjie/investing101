@@ -102,11 +102,16 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Investing',
+          label: '📈 Investing Book',
+        },
+        {
+          to: '/investment-calculator',
+          label: '📊 Investment Calculator',
+          position: 'left',
         },
         {
           to: '/interactive-formulas',
-          label: 'Interactive Formulas',
+          label: '🧮 Interactive Formulas',
           position: 'left',
         },
         {
