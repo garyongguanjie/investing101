@@ -1,6 +1,16 @@
 import React, { useState, useMemo } from 'react';
 import Layout from '@theme/Layout';
 import styles from './investment-calculator.module.css';
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer
+} from 'recharts';
 
 interface InvestmentData {
   year: number;
@@ -95,10 +105,6 @@ export default function InvestmentCalculator(): React.ReactElement {
     // Prevent scrolling from changing the input value
     e.currentTarget.blur();
   };
-
-  const maxValue = Math.max(
-    ...investmentData.map(d => Math.max(d.investingValue, d.notInvestingValue))
-  ) * 1.1; // Add 10% padding at the top
 
   return (
     <Layout
@@ -224,108 +230,80 @@ export default function InvestmentCalculator(): React.ReactElement {
           <div className={styles.chartSection}>
             <h2>Growth Visualization</h2>
             <div className={styles.chartContainer}>
-              <div className={styles.chart}>
-                <div className={styles.chartHeader}>
-                  <div className={styles.legend}>
-                    <div className={styles.legendItem}>
-                      <div className={styles.legendColor} style={{ backgroundColor: '#22c55e' }}></div>
-                      <span>With Investing</span>
-                    </div>
-                    <div className={styles.legendItem}>
-                      <div className={styles.legendColor} style={{ backgroundColor: '#ef4444' }}></div>
-                      <span>Without Investing</span>
-                    </div>
-                    <div className={styles.legendItem}>
-                      <div className={styles.legendColor} style={{ backgroundColor: '#3b82f6' }}></div>
-                      <span>Total Contributions</span>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className={styles.chartArea}>
-                  <div className={styles.yAxis}>
-                    {[0, 0.25, 0.5, 0.75, 1].map(fraction => (
-                      <div key={fraction} className={styles.yAxisLabel}>
-                        ${Math.round(maxValue * fraction).toLocaleString()}
-                      </div>
-                    ))}
-                  </div>
-                  
-                  <div className={styles.plotArea}>
-                    <svg width="100%" height="400" viewBox="0 0 800 400">
-                      {/* Grid lines */}
-                      {[0, 0.25, 0.5, 0.75, 1].map(fraction => (
-                        <line
-                          key={fraction}
-                          x1="0"
-                          y1={400 - fraction * 400}
-                          x2="800"
-                          y2={400 - fraction * 400}
-                          stroke="#e5e7eb"
-                          strokeWidth="1"
-                        />
-                      ))}
-                      
-                      {/* Investing line */}
-                      <path
-                        d={investmentData.map((d, i) => 
-                          `${i === 0 ? 'M' : 'L'} ${(i / (investmentData.length - 1)) * 800} ${400 - (d.investingValue / maxValue) * 400}`
-                        ).join(' ')}
-                        fill="none"
-                        stroke="#22c55e"
-                        strokeWidth="3"
-                      />
-                      
-                      {/* Not investing line */}
-                      <path
-                        d={investmentData.map((d, i) => 
-                          `${i === 0 ? 'M' : 'L'} ${(i / (investmentData.length - 1)) * 800} ${400 - (d.notInvestingValue / maxValue) * 400}`
-                        ).join(' ')}
-                        fill="none"
-                        stroke="#ef4444"
-                        strokeWidth="3"
-                      />
-                      
-                      {/* Contributions line */}
-                      <path
-                        d={investmentData.map((d, i) => 
-                          `${i === 0 ? 'M' : 'L'} ${(i / (investmentData.length - 1)) * 800} ${400 - (d.totalContributions / maxValue) * 400}`
-                        ).join(' ')}
-                        fill="none"
-                        stroke="#3b82f6"
-                        strokeWidth="2"
-                        strokeDasharray="5,5"
-                      />
-                      
-                      {/* Data points */}
-                      {investmentData.map((d, i) => (
-                        <g key={i}>
-                          <circle
-                            cx={(i / (investmentData.length - 1)) * 800}
-                            cy={400 - (d.investingValue / maxValue) * 400}
-                            r="4"
-                            fill="#22c55e"
-                          />
-                          <circle
-                            cx={(i / (investmentData.length - 1)) * 800}
-                            cy={400 - (d.notInvestingValue / maxValue) * 400}
-                            r="4"
-                            fill="#ef4444"
-                          />
-                        </g>
-                      ))}
-                    </svg>
-                  </div>
-                </div>
-                
-                <div className={styles.xAxis}>
-                  {investmentData.filter((_, i) => i % Math.max(1, Math.floor(investmentData.length / 10)) === 0).map(d => (
-                    <div key={d.year} className={styles.xAxisLabel}>
-                      Year {d.year}
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <ResponsiveContainer width="100%" height={600}>
+                <LineChart
+                  data={investmentData}
+                  margin={{
+                    top: 20,
+                    right: 30,
+                    left: 20,
+                    bottom: 20,
+                  }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                  <XAxis 
+                    dataKey="year" 
+                    stroke="#6b7280"
+                    fontSize={12}
+                    tickFormatter={(value) => `Year ${value}`}
+                  />
+                  <YAxis 
+                    stroke="#6b7280"
+                    fontSize={12}
+                    tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      backgroundColor: '#f9fafb',
+                      border: '1px solid #e5e7eb',
+                      borderRadius: '8px',
+                      fontSize: '14px'
+                    }}
+                    formatter={(value: number, name: string) => [
+                      `$${value.toLocaleString(undefined, { maximumFractionDigits: 0 })}`,
+                      name === 'investingValue' ? 'With Investing' :
+                      name === 'notInvestingValue' ? 'Without Investing' :
+                      name === 'totalContributions' ? 'Total Contributions' :
+                      name
+                    ]}
+                    labelFormatter={(label) => `Year ${label}`}
+                  />
+                  <Legend 
+                    wrapperStyle={{ paddingTop: '20px' }}
+                    formatter={(value) => 
+                      value === 'investingValue' ? 'With Investing' :
+                      value === 'notInvestingValue' ? 'Without Investing' :
+                      value === 'totalContributions' ? 'Total Contributions' :
+                      value
+                    }
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="investingValue"
+                    stroke="#22c55e"
+                    strokeWidth={3}
+                    dot={{ fill: '#22c55e', strokeWidth: 2, r: 4 }}
+                    activeDot={{ r: 6, stroke: '#22c55e', strokeWidth: 2 }}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="notInvestingValue"
+                    stroke="#ef4444"
+                    strokeWidth={3}
+                    dot={{ fill: '#ef4444', strokeWidth: 2, r: 4 }}
+                    activeDot={{ r: 6, stroke: '#ef4444', strokeWidth: 2 }}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="totalContributions"
+                    stroke="#3b82f6"
+                    strokeWidth={2}
+                    strokeDasharray="5 5"
+                    dot={{ fill: '#3b82f6', strokeWidth: 2, r: 3 }}
+                    activeDot={{ r: 5, stroke: '#3b82f6', strokeWidth: 2 }}
+                  />
+                </LineChart>
+              </ResponsiveContainer>
             </div>
           </div>
 
