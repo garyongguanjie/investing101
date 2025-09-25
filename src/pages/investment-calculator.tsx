@@ -82,7 +82,6 @@ export default function InvestmentCalculator(): React.ReactElement {
 
   const finalData = investmentData[investmentData.length - 1];
   const totalGains = finalData?.investmentGains || 0;
-  const totalContributions = finalData?.totalContributions || 0;
   const finalInvestingValue = finalData?.investingValue || 0;
   const finalNotInvestingValue = finalData?.notInvestingValue || 0;
 
@@ -216,14 +215,6 @@ export default function InvestmentCalculator(): React.ReactElement {
               </div>
               <div className={styles.summaryLabel}>Extra Money Earned</div>
             </div>
-
-            <div className={styles.summaryCard}>
-              <h3>Total Contributions</h3>
-              <div className={styles.summaryValue}>
-                ${totalContributions.toLocaleString(undefined, { maximumFractionDigits: 0 })}
-              </div>
-              <div className={styles.summaryLabel}>Money You Put In</div>
-            </div>
           </div>
 
           {/* Chart */}
@@ -306,7 +297,6 @@ export default function InvestmentCalculator(): React.ReactElement {
                     <th>Year</th>
                     <th>With Investing</th>
                     <th>Without Investing</th>
-                    <th>Total Contributions</th>
                     <th>Investment Gains</th>
                   </tr>
                 </thead>
@@ -319,9 +309,6 @@ export default function InvestmentCalculator(): React.ReactElement {
                       </td>
                       <td>
                         ${data.notInvestingValue.toLocaleString(undefined, { maximumFractionDigits: 0 })}
-                      </td>
-                      <td>
-                        ${data.totalContributions.toLocaleString(undefined, { maximumFractionDigits: 0 })}
                       </td>
                       <td className={styles.gains}>
                         ${data.investmentGains.toLocaleString(undefined, { maximumFractionDigits: 0 })}
