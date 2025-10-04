@@ -88,6 +88,115 @@ The greatest investors of all time consistently emphasize that successful invest
 - **Overconfidence**: Taking excessive risks after early success
 - **Impatience**: Expecting immediate results from long-term investments
 
+#### Why Most People Buy High and Sell Low
+
+Despite Warren Buffett's wisdom to "be fearful when others are greedy, and greedy when others are fearful," most individual investors do the opposite. Understanding why this happens is crucial to avoiding the same trap.
+
+**The Greed Cycle: Buying High**
+
+When prices are rising, several psychological factors push investors to buy at peak prices:
+
+**1. Extrapolation Bias**: Assuming recent trends will continue indefinitely
+- **Rising prices create excitement**: "This stock has doubled, it must keep going up!"
+- **Fear of missing out (FOMO)**: Everyone else is making money, I need to get in
+- **Recency bias**: Recent gains feel more important than historical risks
+
+**Example**: Microsoft During the Dot-Com Bubble (1999-2000)
+- **Price trajectory**: Rose from \$20 to \$60 during the internet bubble (split-adjusted)
+- **Investor behavior**: Massive buying at \$55-\$60 range in late 1999/early 2000
+- **Psychology**: "The internet will change everything, Microsoft can't lose!"
+- **Reality**: Crashed 63% to \$22 by 2002
+- **The twist**: Those who held through the pain were rewarded - by 2025, Microsoft traded above \$400, representing a 20× return from the bubble peak
+- **Lesson**: The strongest buying often occurs right before major peaks, but quality companies can recover if you have the patience to hold through the pain
+
+**2. Social Proof and Herd Mentality**
+- **Everyone's talking about it**: Dinner parties, social media, news headlines
+- **Success stories everywhere**: Friends and colleagues boasting about gains
+- **Validation seeking**: "If everyone's buying, it must be smart"
+
+**3. Greed Overpowering Reason**
+- **Easy money illusion**: "I'll get rich quickly without much effort"
+- **Suspension of valuation**: "Price doesn't matter, just get in"
+- **Rationalization**: "This time is different, old rules don't apply"
+
+**The Classic Pattern**:
+
+$$\text{Rising Prices} \rightarrow \text{Media Coverage} \rightarrow \text{Excitement} \rightarrow \text{FOMO} \rightarrow \text{Peak Buying} \rightarrow \text{Crash}$$
+
+**The Fear Cycle: Selling Low**
+
+After buying high, when prices inevitably decline, fear takes over:
+
+**1. Panic and Loss Aversion**
+- **Immediate reaction**: "I made a terrible mistake!"
+- **Pain amplification**: Losses hurt psychologically more than equivalent gains feel good
+- **Catastrophic thinking**: "It will go to zero, I need to get out now"
+
+**Example**: March 2020 COVID-19 Crash
+- **Market decline**: S&P 500 dropped 34% in one month
+- **Peak selling**: Massive outflows in late March 2020 near the bottom
+- **Psychology**: "The economy is collapsing, sell everything!"
+- **Reality**: Market fully recovered within 5 months
+- **Lesson**: Maximum fear often coincides with maximum opportunity
+
+**2. Confirmation Bias During Declines**
+- **Seeking negative news**: Finding articles that confirm the decline will continue
+- **Ignoring positive signals**: Dismissing any evidence of recovery
+- **Believing it's different this time**: "This crash is worse than all previous ones"
+
+**3. The "Mistake" Mentality**
+- **Self-blame**: "I was stupid to buy this"
+- **Desire to "fix" the mistake**: Selling to make the problem go away
+- **Ignoring fundamentals**: Business performance becomes irrelevant, only price matters
+
+**The Devastating Math**:
+
+If you buy a stock at \$100 (high), and it drops 50% to \$50, then you sell (low):
+- **Your loss**: 50% (\$50 loss on \$100 investment)
+- **Required gain to break even if you held**: 100% (from \$50 back to \$100)
+- **What actually happens**: Stock often recovers, but you've locked in the loss
+
+**Real-World Example**: Technology Stocks in 2022
+
+**The Setup** (2020-2021):
+- **Rising prices**: Technology stocks soaring during pandemic
+- **Peak buying**: Massive inflows into tech funds in late 2021
+- **Investor psychology**: "Technology is the future, can't lose!"
+
+**The Crash** (2022):
+- **Price action**: Nasdaq dropped 33% from peak
+- **Investor reaction**: Heavy selling, especially near the lows
+- **Psychology**: "I made a mistake, tech stocks are overvalued!"
+
+**The Recovery** (2023-2024):
+- **Price action**: Market recovered and reached new highs
+- **Lesson**: Those who panicked and sold locked in losses; those who held recovered
+
+**Breaking the Cycle**
+
+**How to Avoid Buying High**:
+1. **Have valuation discipline**: Don't buy when prices exceed reasonable value estimates
+2. **Be contrarian**: When everyone's excited, be cautious
+3. **Wait for corrections**: Quality companies go on sale periodically
+4. **Ignore FOMO**: Missing a rally is better than buying at peaks
+
+**How to Avoid Selling Low**:
+1. **Know what you own**: If the business fundamentals haven't changed, price declines are opportunities
+2. **Expect volatility**: 20-30% declines are normal, not catastrophic
+3. **Have a time horizon**: Short-term price movements don't matter for long-term investors
+4. **Focus on business performance**: Track earnings and cash flow, not stock prices
+
+**Warren Buffett's Wisdom**:
+> "Be fearful when others are greedy, and greedy when others are fearful."
+
+This simple rule captures the essence of avoiding the buy high, sell low trap. When markets are euphoric and prices are soaring, be cautious. When markets are panicking and prices are crashing, be opportunistic.
+
+**The Counterintuitive Reality**:
+- **Best buying opportunities**: When you feel most afraid
+- **Worst buying opportunities**: When you feel most confident
+- **Your emotions**: Often the worst guide for investment decisions
+- **The solution**: Base decisions on business fundamentals, not price movements or feelings
+
 #### The Pain of Watching Declines
 
 **Mathematical Reality vs. Emotional Reality**:
