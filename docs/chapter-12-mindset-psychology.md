@@ -138,6 +138,86 @@ Read company financial statements rather than relying on analyst opinions or med
 **4. Develop Your Own Criteria**:
 Create systematic investment rules based on your research and stick to them regardless of market sentiment.
 
+#### Treating Stock Purchases as Major Financial Decisions
+
+**The Expensive Purchase Analogy**:
+
+When you buy an expensive item—a house, a car, or high-end computer—you naturally engage in careful research and due diligence. You don't simply trust a friend's recommendation or a YouTube influencer's opinion. You study the product, compare alternatives, check reviews, inspect the item personally, and make an informed decision based on your own analysis.
+
+**Stock purchases should follow the same principle**, yet many investors treat buying stocks more casually than they would treat buying a \$2,000 laptop. They might invest \$10,000 in a company based solely on:
+- A friend's "hot tip" at a dinner party
+- A YouTuber's enthusiastic recommendation
+- A trending stock on social media
+- A headline they saw in the news
+
+**Why This Approach Fails**:
+
+**1. Secondhand Opinions Lack Your Context**:
+- **Different goals**: What works for others may not align with your investment objectives
+- **Different risk tolerance**: Others may be comfortable with risks you should avoid
+- **Different time horizons**: Short-term trades vs. long-term investments require different approaches
+- **Hidden motivations**: Influencers and friends may have incentives you're unaware of
+
+**2. Incomplete Information**:
+- **Surface-level analysis**: Recommendations often lack detailed financial examination
+- **Missing risks**: Others may not mention or understand potential problems
+- **Outdated information**: Situations change rapidly; recommendations can quickly become irrelevant
+
+**3. No Accountability**:
+- **Your money, your risk**: The person who recommended the stock won't compensate you for losses
+- **Learning opportunity lost**: Relying on others prevents you from developing your own skills
+
+**The Minimum Due Diligence Standard**:
+
+Just as you would test-drive a car or inspect a house before buying, you should examine a company's financial health before investing. At minimum, this requires reviewing:
+
+**1. Earnings Reports (Income Statement)**:
+- **Revenue trends**: Is the company growing or declining?
+- **Profitability**: Are earnings increasing or decreasing?
+- **Margins**: How efficient is the business at converting sales to profits?
+- **One-time items**: Are earnings sustainable or boosted by unusual events?
+
+**2. Balance Sheet**:
+- **Debt levels**: Can the company handle its obligations?
+- **Cash position**: Does it have adequate liquidity?
+- **Assets**: What does the company own and what condition are these assets in?
+- **Shareholder equity**: Is the company building or destroying value over time?
+
+**3. Cash Flow Statements**:
+- **Operating cash flow**: Is the business generating cash from operations?
+- **Capital expenditures**: How much investment is required to maintain the business?
+- **Free cash flow**: How much cash is available after necessary investments?
+- **Cash flow quality**: Are earnings translating into actual cash?
+
+**The Research Mindset**:
+
+When buying an expensive computer, you might:
+- **Read detailed specifications** to understand what you're getting
+- **Compare multiple options** to find the best value
+- **Check independent reviews** from trusted sources
+- **Consider long-term value** beyond just the initial price
+- **Assess your actual needs** to ensure it fits your requirements
+
+Apply the same rigor to stock purchases:
+- **Read financial statements** to understand the business fundamentals
+- **Compare with competitors** to assess relative value and positioning
+- **Study independent analysis** (while forming your own conclusions)
+- **Consider long-term prospects** beyond current market sentiment
+- **Assess fit with your portfolio** and investment goals
+
+**Taking Responsibility for Your Decisions**:
+
+The most important aspect of this mindset is **personal accountability**. When you:
+- **Do your own research**, you understand what you own and why
+- **Make independent decisions**, you can learn from both successes and failures
+- **Accept responsibility**, you develop the judgment needed for long-term success
+
+This doesn't mean you must become an expert analyst immediately. Start with basic financial statement review, gradually building your analytical skills over time. The key is developing the **discipline of independent thinking** rather than outsourcing your financial decisions to others.
+
+:::tip Remember
+You wouldn't buy a \$30,000 car based solely on a friend's recommendation without seeing it yourself. Don't invest \$30,000 in stocks with less due diligence than you'd give to a major purchase. The financial statements—earnings reports, balance sheets, and cash flow statements—are your "test drive" before committing your capital.
+:::
+
 #### The Circle of Competence
 
 > "Know your circle of competence, and stick within it. The size of that circle is not very important; knowing its boundaries, however, is vital."
