@@ -264,6 +264,34 @@ export default function InteractiveFormulas(): React.ReactElement {
       }
     },
     {
+      title: "Benjamin Graham Growth Projection",
+      description: "Reverse-engineers the expected growth rate implied by a stock's current P/E ratio using Graham's formula. This helps determine what growth rate the market is pricing into the stock at current interest rates.",
+      formula: "g = \\frac{\\text{P/E} \\times \\frac{Y}{4.4} - 8.5}{2}",
+      inputs: [
+        { label: "P/E Ratio", key: "peRatio", placeholder: "15", suffix: "×" },
+        { label: "Current Interest Rate (AAA Bond Yield)", key: "interestRate", placeholder: "4.4", suffix: "%" }
+      ],
+      calculate: (inputs) => {
+        if (inputs.peRatio <= 0 || inputs.interestRate <= 0) {
+          return "Invalid: P/E ratio and interest rate must be positive";
+        }
+        return ((inputs.peRatio * (inputs.interestRate / 4.4) - 8.5) / 2);
+      },
+      resultLabel: "Expected Growth Rate",
+      resultSuffix: "%",
+      interpretation: (result) => {
+        if (typeof result === 'number') {
+          if (result < 0) return "Negative growth implied - Stock may be overvalued or market expects declining earnings";
+          if (result <= 5) return "Low growth expected - Suitable for mature, stable companies";
+          if (result <= 10) return "Moderate growth expected - Typical for established companies";
+          if (result <= 15) return "Good growth expected - Above-average growth priced in";
+          if (result <= 20) return "High growth expected - Premium valuation for strong growers";
+          return "Very high growth expected - Market pricing in exceptional growth, verify if sustainable";
+        }
+        return "";
+      }
+    },
+    {
       title: "Dividend Discount Model (DDM)",
       description: "Values a stock based on future dividend payments. Buffett often uses this for dividend-paying stocks, especially when evaluating income-generating investments.",
       formula: "\\text{Intrinsic Value} = \\frac{\\text{Next Year's Dividend}}{\\text{Required Return} - \\text{Growth Rate}}",
