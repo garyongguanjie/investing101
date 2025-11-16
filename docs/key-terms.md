@@ -2,7 +2,7 @@
 id: key-terms
 title: Key Financial and Accounting Terms
 sidebar_label: Key Terms
-sidebar_position: 13
+sidebar_position: 15
 slug: /key-terms
 description: A comprehensive glossary of all financial and accounting terms used throughout the Investing 101 book, explained in beginner-friendly language.
 keywords:
